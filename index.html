@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Olivia Yip's Portfolio - About Me Page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    html, body {
+      font-family: 'Be Vietnam', sans-serif;
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #a9a496;
+      color: white;
+      text-align: center;
+    }
+
+    header h1 {
+      font-family: 'Be Vietnam', sans-serif;
+      font-size: 2.5rem;
+      padding: 30px;
+      margin: 0;
+    }
+
+    nav {
+      background-color: #ece3dd;
+      padding: 8px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    nav ul li {
+      display: inline;
+    }
+
+    nav ul li a {
+      color: #a1a0a0;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+      color: #3d4e5b;
+      font-weight: bold;
+    }
+
+    .about-me {
+      text-align: center;
+      padding: 50px 10%;
+      min-height: calc(100vh - 150px);
+      box-sizing: border-box;
+    }
+
+    .about-me h2 {
+      font-family: 'Be Vietnam', sans-serif;
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .about-me p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    footer {
+      background-color: #a9a496;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .about-me {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Olivia Yip's Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="https://oliviayiip.github.io/about-me-page/" class="active">About Me</a></li>
+        <li><a href="https://oliviayiip.github.io/resume-page/">Resume</a></li>
+        <li><a href="https://oliviayiip.github.io/projects-page/">Projects</a></li>
+        <li><a href="https://oliviayiip.github.io/contact-me-page/">Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="about-me">
+    <h2>About Me!</h2>
+    <p>Hi! My name is Olivia and I am a second-year Global Business and Digital Arts student at the University of Waterloo.  I'm passionate about creating digital experiences that blend creativity with functionality and my work shows various visually compelling designs.</p>
+    <p>I aim to create engaging visuals that captivate and grab the attention of others. My work and designs explore various styles, often focusing on fun and joyful concepts.</p>
+    <img src="your-photo-url.jpg" alt="Olivia Yip">
+  </section>
+
+  <footer>
+    &copy; 2024 Olivia Yip. All Rights Reserved.
+  </footer>
+</body>
+</html>
