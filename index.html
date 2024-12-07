@@ -62,10 +62,18 @@
     }
 
     .about-me {
-      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
       padding: 50px 10%;
       min-height: calc(100vh - 150px);
       box-sizing: border-box;
+    }
+
+    .about-me-text {
+      flex: 1;
+      text-align: left;
     }
 
     .about-me h2 {
@@ -98,14 +106,21 @@
       }
 
       .about-me {
+        flex-direction: column;
         padding: 20px;
+      }
+
+      .about-me-text {
+        text-align: center;
       }
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Olivia Yip's Portfolio</h1>
+    <a href="https://oliviayiip.github.io" style="text-decoration: none; color: white;">
+      <h1>Olivia Yip's Portfolio</h1>
+    </a>
     <nav>
       <ul>
         <li><a href="https://oliviayiip.github.io/about-me-page/" class="active">About Me</a></li>
@@ -117,10 +132,22 @@
   </header>
 
   <section class="about-me">
-    <h2>About Me!</h2>
-    <p>Hi! My name is Olivia and I am a second-year Global Business and Digital Arts student at the University of Waterloo.  I'm passionate about creating digital experiences that blend creativity with functionality and my work shows various visually compelling designs.</p>
-    <p>I aim to create engaging visuals that captivate and grab the attention of others. My work and designs explore various styles, often focusing on fun and joyful concepts.</p>
-    <img src="P1070010 (1).jpeg" alt="Olivia Yip" width=500 >
+    <div class="about-me-text">
+      <h2>About Me!</h2>
+      <p>Hi! My name is Olivia and I am a second-year Global Business and Digital Arts student at the University of Waterloo. I'm passionate about creating digital experiences that blend creativity with functionality, and my work shows various visually compelling designs.</p>
+      <p>I aim to create engaging visuals that captivate and grab the attention of others. My work and designs explore various styles, often focusing on fun and joyful concepts</p>
+      <h3>Skills</h3>
+      <p>I have gained various skills through my experiences on different projects, including:
+      <li>Graphic Design – Proficiency in Adobe Illustrator and other Adobe Creative Suite programs</li>
+      <li>Digital Marketing – Experience with social media campaigns and content creation</li>
+      <li>Web Design – Skills in designing and redesigning websites</li>
+      <li>Project Management – Strong timeline management and advertising coordination skills</li>
+      <li>Creativity – Developing innovative design solutions and marketing concepts</li>
+      <li>Detail-Oriented – Careful attention to design elements and project specifications</li></p>
+      <h3>Career Goals</h3>
+      <p>In the future, I hope to develop a career in digital marketing and advertising. I really enjoy creating digital advertisements that capture attention and influence consumer buying decisions in various creative ways. I want to help brands build relationships with their audiences through design. In this portfolio, I have included some marketing visuals that shows my experience and background in digital media.</p>
+    </div>
+    <img src="P1070010 (1).jpeg" alt="Olivia Yip" width="500">
   </section>
 
   <footer>
@@ -128,3 +155,4 @@
   </footer>
 </body>
 </html>
+
